@@ -1,0 +1,86 @@
+//Utilities must use a camel case name, prefixed with a u namespace and should be set in utilities.css.scss
+//e.g. u-pullRight
+
+//Syntax: u-<utilityName>
+
+//GENERAL
+.u-visible{
+	display:block !important;
+}
+.u-hidden{
+	display:none !important;
+}
+.u-transparent{
+	opacity:0;
+}
+.u-noMargin{
+	margin:0;
+}
+.u-noPadding{
+	padding:0;
+}
+.u-stripped{
+	margin:0;
+	padding:0;
+}
+.u-float-left{
+	float:left;
+}
+.u-float-right{
+	float:right;
+}
+.u-overflow--hidden{
+	overflow:hidden;
+	overflow:scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+//EFFECTS
+.u-image--zoom img{
+	@include m-transform(scale(1, 1));
+	@include m-transition(0.8s ease-out);
+}
+.u-image--zoom:hover img{
+	@include m-transform(scale(1.05, 1.05));
+	@include m-transition(0.8s ease-out);
+}
+
+//LISTS
+.u-plainList{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.u-inlineList > li{
+	display:inline-block;
+}
+
+//IMAGES
+.u-image--fullBleed{
+	overflow:hidden;
+}
+.u-image--fullBleed--landscape > img{
+	max-width:1000%;
+	height:105%;
+}
+.u-image--fullBleed--portrait  > img{
+	max-width:1000%;
+	height:105%;
+}
+.u-lazy{
+	opacity:0;
+	border:transparent;
+
+	@include m-transition(0.2s ease-in-out);
+}
+.u-lazy.is-loaded{
+	opacity:1;
+}
+
+//MAPS
+.u-map label{
+	width: auto; display:inline;
+}
+.u-map img{
+	max-width: none;
+}

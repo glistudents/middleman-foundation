@@ -1,0 +1,43 @@
+//Polyfills should be used for browser pre-fixed properties exclusively
+//mixin syntax: m-<propertyName>
+
+@mixin m-boxShadow($shadow) {
+	-webkit-box-shadow: $shadow;
+		 -moz-box-shadow: $shadow;
+			-ms-box-shadow: $shadow;
+			    box-shadow: $shadow;
+}
+
+@mixin m-borderRadius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin m-userSelect($option) {
+	-webkit-touch-callout: $option;
+		-webkit-user-select: $option;
+		-khtml-user-select: $option;
+			-moz-user-select: $option;
+			 -ms-user-select: $option;
+					 user-select: $option;
+}
+
+@mixin m-transition($tranistion) {
+	-webkit-transition: $tranistion;
+		 -moz-transition: $tranistion;
+			 -o-transition: $tranistion;
+					transition: $tranistion;
+}
+
+@mixin m-transform($transform) {
+	-webkit-transform: $transform;
+		 -moz-transform: $transform;
+			 -o-transform: $transform;
+					transform: $transform;
+}
+
+@mixin m-animation($animation) {
+	-webkit-animation: $animation;
+					animation: $animation;
+}

@@ -1,0 +1,26 @@
+//Font sizes must NEVER be used anywhere than type.css.scss
+
+//FONT FAMILIES
+$font-base:     'arial';
+$font-feature1: 'arial';
+$font-feature2: 'arial';
+
+//FONT SIZES
+$fontSize-tiny:     6pt;
+$fontSize-smallest: 8pt;
+$fontSize-smaller:  9pt;
+$fontSize-small:    10pt;
+$fontSize-base:     12pt;
+$fontSize-large:    14pt;
+$fontSize-larger:   21pt;
+$fontSize-largest:  28pt;
+$fontSize-massive:  35pt;
+
+//LINE HEIGHTS
+$lineHeight-tightest: 10px;
+$lineHeight-tighter:  12px;
+$lineHeight-tight:    14px;
+$lineHeight-baseSans: 16px;
+$lineHeight-base:     18px;
+$lineHeight-loose:    20px;
+$lineHeight-looser:   22px;
