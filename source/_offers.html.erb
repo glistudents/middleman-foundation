@@ -1,0 +1,9 @@
+<ul class="small-block-grid-1 medium-block-grid-3 offerGrid">
+	<% (top_offers = offer_array(geo,:top)).each_with_index do |offer,index| %>
+		<%= partial 'offer_detail', locals: { offer: offer, top: true, offers_length: top_offers.length, index: index } %>
+	<% end %>
+
+	<% (bottom_offers = offer_array(geo,:bottom)).each_with_index do |offer,index| %>
+		<%= partial 'offer_detail', locals: { offer: offer, top: false, offers_length: bottom_offers.length, index: index } %>
+	<% end %>
+<ul>

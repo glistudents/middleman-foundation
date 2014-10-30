@@ -1,0 +1,6 @@
+<li class=" <%= top ? 'topRow' : 'bottomRow' %> <%= 'first' if index == 0 && !top %> <%= 'last' if (index + 1 == offers_length) %>">
+	<img class="offerImage"/>
+	<p class="offerText"><%= offer[:title] %></p>
+	<p><%= offer[:detail] %></p>
+	<%= link_to(offer[:link_text], offer[:link_url]) %>
+</li>
