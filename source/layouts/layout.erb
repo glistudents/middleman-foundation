@@ -13,10 +13,12 @@
   </head>
 
   <body class="<%= page_classes %>">
-		<div class="row">
-			<div class="small-12 small-centered columns">
-				<div class="header">
-					<%= link_to('Back to <span>My WU</span>', '', class: 'callToAction') %>
+		<div class="headerWrap">
+			<div class="row">
+				<div class="small-12 small-centered columns">
+					<div class="header">
+						<%= link_to('', '', class: 'slogan') %>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -26,7 +28,6 @@
 				<div class="mainContent">
 					<div class="row">
 						<div class="small-12 medium-8 columns">
-							<div class="slogan"></div>
 							<div class="introText">
 								<%= yield_content :intro_text %>
 							</div>

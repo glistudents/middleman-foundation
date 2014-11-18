@@ -1,51 +1,59 @@
+body{
+	background-color:$grey--wu;
+}
+.headerWrap{
+	background:$black;
+}
 .header{
 	position:relative;
-	height:150px;
+	height:80px;
 	background:$black url(image_path('wu-logo.svg')) no-repeat;
-	background-size:auto 80px;
+	background-size:auto 70px;
 	background-position-y:center;
 	background-position-x:20px;
-}
-.header > .callToAction{
-	position:absolute;
-	right:50px;
-	top:94px;
-	color:$yellow;
-	font-size:$fontSize-large;
 
-	@media #{$small-only} {
-		top:80%;
-		right:12px;
-	}
-}
-.header > .callToAction > span{
-	text-decoration:underline;
+	@media #{$small-only} { background-size:auto 44px; }
 }
 .mainContent{
 	padding:0 18px;
 	border-bottom:3px solid $yellow;
-	margin-bottom:50px;
+	margin-bottom:35px;
 }
 .slogan{
-	margin:26px 0 18px 0;
-	height:200px;
+	display:block;
+	position:absolute;
+	top:5px;
+	right:0;
+	margin:0;
+	height:68px;
+	width:200px;
 	background:url(image_path('my-wu.svg')) no-repeat;
 	background-size:contain;
 
 	@media #{$small-only} {
-		height:150px;
-		margin-bottom:0;
+		width:160px;
+		right:10px;
+		top:8px;
 	}
 }
+.introText{
+	margin-top:30px;
+}
 .introText > h1{
-	font-size:$fontSize-larger;
+	font-size:$fontSize-massive;
 	font-weight:bold;
-	line-height:36px;
+	line-height:43px;
 	margin-bottom:18px;
 }
+.introText > p{
+	margin:30px 0;
+}
 .offerGrid{
-	margin-bottom:18px;
+	position:relative;
+	margin-bottom:25px;
 	padding:20px 15px;
+	background:$white--transparent;
+	z-index:$zIndex-2;
 	@include m-borderRadius(14px);
 	@include m-boxShadow(inset 0 0 10px $grey);
 }
@@ -95,25 +103,29 @@
 	font-weight:bold;
 }
 .acompanyingImage{
-	height:800px;
-	width:30%;
+	height:580px;
+	width:54%;
 	position:absolute;
-	bottom:3px;
-	right:2%;
+	bottom:58px;
+	right:0;
 	background-repeat:no-repeat;
 	background-size:contain;
-	background-position:bottom;
+	z-index:$zIndex-1;
+
+	@media #{ $medium-only } {
+		height:512px;
+		width:62%;
+	}
 
 	@media #{ $small-only } {
-		position:relative;
 		bottom:0px;
 		width:100%;
-		height:400px;
+		height:429px;
 	}
 }
 .acompanyingImage--uae{
 	background-image:url(image_path('my-wu-rewards-mid-eastern.jpg'));
 }
 .acompanyingImage--usa{
-	background-image:url(image_path('my-wu-rewards-western.jpg'));
+	background-image:url(image_path('my-wu-rewards-western.png'));
 }
