@@ -30,10 +30,8 @@ namespace :middleman do
 
   desc "Deploy to VPS"
   task :deploy_to_remote do
-    run_locally do
-     execute "scp -P #{fetch(:ssh_options)[:port]} -r #{fetch(:build_archive)} #{fetch(:ssh_user)}@#{fetch(:server_address)}:#{fetch(:deploy_to)}"
-    end
     on roles(:web) do
+      upload! fetch(:build_archive), "#{fetch(:deploy_to)}"
       cmd = "cd #{fetch(:deploy_to)} && rm -fr current/*"
       cmd += " && unzip #{fetch(:build_archive)} && cp -fr #{fetch(:build_dir)}/* current/"
       execute cmd
