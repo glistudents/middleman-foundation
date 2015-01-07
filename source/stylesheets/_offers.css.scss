@@ -6,35 +6,14 @@ body{
 }
 .header{
 	position:relative;
-	height:80px;
-	background:$black url(image_path('wu-logo.svg')) no-repeat;
-	background-size:auto 70px;
-	background-position-y:center;
-	background-position-x:20px;
+	padding:18px;
 
-	@media #{$small-only} { background-size:auto 44px; }
+	@media #{$small-only} { text-align:center; }
 }
 .mainContent{
 	padding:0 18px;
 	border-bottom:3px solid $yellow;
 	margin-bottom:35px;
-}
-.slogan{
-	display:block;
-	position:absolute;
-	top:5px;
-	right:0;
-	margin:0;
-	height:68px;
-	width:200px;
-	background:url(image_path('my-wu.svg')) no-repeat;
-	background-size:contain;
-
-	@media #{$small-only} {
-		width:160px;
-		right:10px;
-		top:8px;
-	}
 }
 .introText{
 	margin-top:30px;
@@ -114,7 +93,8 @@ body{
 
 	@media #{ $medium-only } {
 		height:512px;
-		width:62%;
+		width:52%;
+		bottom:102px;
 	}
 
 	@media #{ $small-only } {
