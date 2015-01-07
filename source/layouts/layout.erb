@@ -22,13 +22,15 @@
 			<div class="small-12 small-centered columns">
 				<div class="mainContent">
 					<div class="row">
-						<div class="small-12 medium-8 columns">
+						<div class="small-12 medium-6 columns">
 							<div class="introText">
 								<%= yield_content :intro_text %>
 							</div>
-							<%= yield_content :offers %>
 						</div>
-						<div class="small-12 medium-4 columns">
+					</div>
+					<div class="row">
+						<div class="small-12 large-8 columns">
+							<%= yield_content :offers %>
 						</div>
 					</div>
 					<div class="acompanyingImage <%= yield_content :image_class %> hide-for-small-only"></div>

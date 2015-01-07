@@ -21,7 +21,7 @@ body{
 .introText > h1{
 	font-size:$fontSize-massive;
 	font-weight:bold;
-	line-height:43px;
+	line-height:41px;
 	margin-bottom:18px;
 }
 .introText > p{
@@ -92,9 +92,9 @@ body{
 	z-index:$zIndex-1;
 
 	@media #{ $medium-only } {
-		height:512px;
-		width:52%;
-		bottom:102px;
+		height:460px;
+		width:44%;
+		bottom:291px;
 	}
 
 	@media #{ $small-only } {
