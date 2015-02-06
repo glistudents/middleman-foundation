@@ -103,8 +103,19 @@ body{
 		height:429px;
 	}
 }
+.acompanyingImage--ksa{
+	background-image:url(image_path('my-wu-rewards-ksa.png'));
+
+	@media #{ $medium-up } {
+		bottom:147px;
+		width:52%;
+	}
+}
 .acompanyingImage--uae{
-	background-image:url(image_path('my-wu-rewards-mid-eastern.jpg'));
+	background-image:url(image_path('my-wu-rewards-uae.png'));
+
+	@media #{ $medium-up } { bottom:160px; }
+	@media #{ $medium-only } { bottom:272px; }
 }
 .acompanyingImage--usa{
 	background-image:url(image_path('my-wu-rewards-western.png'));
