@@ -1,6 +1,9 @@
 body{
 	background-color:$grey--wu;
 }
+.row{
+	max-width:900px;
+}
 .headerWrap{
 	background:$black;
 }
@@ -40,7 +43,8 @@ body{
 	@include m-boxShadow(inset 0 0 10px $grey);
 }
 .offerGrid > li{
-	min-height:150px;
+	position:relative;
+	min-height:330px;
 	border:1px solid $grey--light;
 
 	@media #{$small-only} { border:0px; }
@@ -59,6 +63,7 @@ body{
 }
 .offerGrid > li.bottomRow{
 	border-bottom:0px;
+	min-height:365px;
 }
 .offerGrid > li.bottomRow.first{
 	border-left:0px;
@@ -67,7 +72,6 @@ body{
 	border-right:0px;
 }
 .offerGrid > li > .offerImage{
-	height:80px;
 	width:100%;
 	margin:10px 0 10px 0;
 }
@@ -81,8 +85,14 @@ body{
 .offerGrid > li > p.offerText{
 	font-weight:bold;
 }
+.offerGrid > li > p.offerDetail{
+	font-size:$fontSize-small;
+	margin:8px 0;
+}
 .offerGrid > li > a{
 	font-weight:bold;
+	position:absolute;
+	bottom:10px;
 }
 .acompanyingImage{
 	height:580px;
@@ -121,13 +131,7 @@ body{
 	background-image:url(image_path('my-wu-rewards-usa.jpg'));
 	right:25px;
 
-	@media #{ $medium-up } {
-		max-height:170px;
-		top:35px;
-		right:0;
-	}
-
-	@media #{ $medium-only } {
+	@media #{ $small-up } {
 		height:310px;
 		min-width:34%;
 		max-width:310px;
