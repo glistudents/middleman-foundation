@@ -1,1 +1,2 @@
-//= require_tree .
+//= require_directory  ./vendor
+//= require_directory ./public

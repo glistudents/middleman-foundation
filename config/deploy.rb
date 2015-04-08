@@ -1,6 +1,3 @@
-# config valid only for Capistrano 3.1
-lock '3.3.5'
-
 set :application, 'my-wu-rewards'
 set :use_sudo, false
 set :build_dir, 'build'

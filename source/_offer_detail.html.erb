@@ -1,5 +1,5 @@
 <li class=" <%= top ? 'topRow' : 'bottomRow' %> <%= 'first' if index == 0 && !top %> <%= 'last' if (index + 1 == offers_length) %>">
-	<%= image_tag(offer[:image], class: 'offerImage') %>
+	<%= image_tag(offer[:image], class: 'offerImage lazy j-lazy') %>
 	<p class="offerText"><%= offer[:title] %></p>
 	<p class="offerDetail"><%= offer[:details] %></p>
 	<%= link_to(offer[:link_text], offer[:link_url]) %>

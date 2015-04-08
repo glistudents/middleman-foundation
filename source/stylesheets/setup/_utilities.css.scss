@@ -12,6 +12,10 @@
 }
 .u-transparent{
 	opacity:0;
+	@include m-transition(opacity 0.6s);
+}
+.u-opaque{
+	opacity:1;
 }
 .u-noMargin{
 	margin:0;
