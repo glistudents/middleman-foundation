@@ -31,10 +31,10 @@ module OfferHelper
   def usa_offers
     [
       { position: :top, title: 'Vistaprint, USA', details: 'Buy More, Save More at Vistaprint! Save $5 off your $25 order, $10 off your $50 order, and $25 off your $100 order. Stock up on business cards, t-shirts, phone cases, and more!', link_text: 'Vistaprint, USA', link_url: 'http://www.tkqlhce.com/click-7316990-11610828', image: 'offers/usa/visaprint.jpg' },
-      { position: :top, title: '123 Greetings Store', details: 'New Year Specials Use coupon GET10OFF on over 10,000 products on 123Greetings Store.', link_text: '123 Greetings Store', link_url: 'http://www.dpbolvw.net/click-7316990-11661073', image: 'offers/usa/123-greetings.png' },            
-      { position: :top, title: 'CheapOstay', details: 'Save on Spring Travel! Save up to $30 with Promo Code SPRING30 Book Now!', link_text: 'CheapOstay', link_url: 'http://www.jdoqocy.com/click-7316990-10767231', image: 'offers/usa/cheapostay.jpg' },
-      { position: :bottom, title: 'Home Depot', details: 'Save up to 20% OFF Overstock', link_text: 'Home Depot - 20% Off', link_url: 'http://www.anrdoezrs.net/click-7316990-11997510', image: 'offers/usa/home-depot.png' },
-      { position: :bottom, title: 'Vons.com', details: 'Vons Grocery Delivery - Free Delivery on First Order of $49 or more. Enter Promo Code EASY7. *Vons.com currently delivers in these areas: Los Angeles, Inland Empire, Orange County, San Diego, Ventura, and Las Vegas.', link_text: 'Vons.com', link_url: 'http://www.kqzyfj.com/click-7316990-10387209', image: 'offers/usa/vons.png' }
+      { position: :top, title: 'Vons.com', details: 'Vons Grocery Delivery - Free Delivery on First Order of $49 or more. Enter Promo Code EASY7. *Vons.com currently delivers in these areas: Los Angeles, Inland Empire, Orange County, San Diego, Ventura, and Las Vegas.', link_text: 'Vons.com', link_url: 'http://www.kqzyfj.com/click-7316990-10387209', image: 'offers/usa/vons.png' },
+      { position: :top, title: 'Home Depot', details: 'Save up to 20% OFF Overstock', link_text: 'Home Depot - 20% Off', link_url: 'http://www.anrdoezrs.net/click-7316990-11997510', image: 'offers/usa/home-depot.png' },
+      { position: :bottom, title: '123 Greetings Store', details: 'New Year Specials Use coupon GET10OFF on over 10,000 products on 123Greetings Store.', link_text: '123 Greetings Store', link_url: 'http://www.dpbolvw.net/click-7316990-11661073', image: 'offers/usa/123-greetings.png' },            
+      { position: :bottom, title: 'CheapOstay', details: 'Save on Spring Travel! Save up to $30 with Promo Code SPRING30 Book Now!', link_text: 'CheapOstay', link_url: 'http://www.jdoqocy.com/click-7316990-10767231', image: 'offers/usa/cheapostay.jpg' }
     ]
   end
 
