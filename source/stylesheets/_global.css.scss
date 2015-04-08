@@ -1,3 +1,82 @@
+body{
+	background-color:$grey--wu;
+}
+.row{
+	max-width:800px;
+}
 img.lazy{
 	display:none;
+}
+.headerWrap{
+	background:$black;
+}
+.header{
+	position:relative;
+	padding:18px;
+
+	@media #{$small-only} { text-align:center; }
+}
+.mainContent{
+	padding:0 18px;
+	border-bottom:3px solid $yellow;
+	margin-bottom:35px;
+}
+.introText{
+	margin-top:30px;
+}
+.introText > h1{
+	font-size:$fontSize-massive;
+	font-weight:bold;
+	line-height:1.1;
+	margin-bottom:18px;
+}
+.introText > img{
+	@media #{$small-only} { margin-bottom:25px; }
+}
+.introText > p{
+	margin:30px 0;
+}
+.acompanyingImage{
+	height:580px;
+	width:54%;
+	position:absolute;
+	bottom:58px;
+	right:0;
+	background-repeat:no-repeat;
+	background-size:contain;
+	z-index:$zIndex-1;
+
+	@media #{ $medium-only } {
+		height:460px;
+		width:44%;
+		bottom:291px;
+	}
+}
+.acompanyingImage--ksa{
+	background-image:url(image_path('my-wu-rewards-ksa.png'));
+
+	@media #{ $medium-up } {
+		bottom:12px;
+		width:49%;
+	}
+}
+.acompanyingImage--uae{
+	background-image:url(image_path('my-wu-rewards-uae.png'));
+
+	@media #{ $medium-up } {
+		bottom:12px;
+		right:-62px;
+	}
+	@media #{ $medium-only } { bottom:272px; }
+}
+.acompanyingImage--usa{
+	background-image:url(image_path('my-wu-rewards-usa.jpg'));
+	right:25px;
+
+	@media #{ $small-up } {
+		height:345px;
+		min-width:34%;
+		max-width:345px;
+		top:35px;
+	}
 }
