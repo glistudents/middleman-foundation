@@ -64,15 +64,22 @@ body{
 .offerGrid > li.bottomRow{
 	border-bottom:0px;
 	min-height:320px;
-	padding:5% 10%;
+
+	@media #{$medium-only} {
+		padding:3% 8%;
+		width:50%;
+	}
+
+	@media #{$medium-up} {
+		padding:5% 10%;
+		width:50%;
+	}
 }
 .offerGrid > li.bottomRow.first{
 	border-left:0px;
-	width:50%;
 }
 .offerGrid > li.bottomRow.last{
 	border-right:0px;
-	width:50%;
 }
 .offerGrid > li > .offerImage{
 	width:100%;
